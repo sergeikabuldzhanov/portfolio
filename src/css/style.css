@@ -89,10 +89,11 @@ h2:after,
 .see-more a:hover:after{top:0}
 .see-more a:hover{color:#fff}
 .see-more a span{position:relative;z-index:1}
-.outer{ display:flex; flex-wrap: wrap; flex-direction: column;justify-content: space-between; width:100%;border-bottom:1px solid black; max-height: 355px; height: 100%;}
+.outer{ display:flex; flex-wrap: wrap; flex-direction: column;justify-content: space-between; width:100%;border-bottom:1px solid black; max-height: 370px; height: 100%; overflow: hidden;}
 .outer>div{justify-self: flex-end;}
 .outer p span ul{padding-left: 15px;}
 .outer p strong{padding-top: 5px;}
+.outer .see-more{margin-top: 10px;}
 .outer .see-more .small span{width: 70px; display: inline-block;}
 .work-list{display:flex;flex-wrap:wrap;list-style:none;padding:0;margin:0 -5px}
 .work-list .item{width:33.33%;padding:0 5px;margin-bottom:10px}
@@ -208,6 +209,7 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
     .post-social button{margin-bottom:10px;padding:5px 10px!important;font-size:12px!important}
     .blogs-list .item .inner .details .date{font-size:12px}
     .blogs-list .item .inner .details .title{font-size:20px}
+    .outer{justify-content: flex-start; height: auto;}
 }
 @media only screen and (max-width:480px){
     .about-main .left .gatsby-image-wrapper{height:400px}
