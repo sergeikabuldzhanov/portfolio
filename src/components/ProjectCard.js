@@ -9,6 +9,7 @@ export default function ProjectCard({
   role,
   impact,
   tech,
+  github
 }) {
   return (
     <li className="item">
@@ -35,12 +36,12 @@ export default function ProjectCard({
 
         <div className="d-flex justify-content-between">
           <div className="see-more">
-            <a className="small">
+            <a className="small" target="blank" href={github}>
               <span> GitHub </span>
             </a>
           </div>
           <div className="see-more">
-            <a className="small">
+            <a className="small" target="blank" href={url}>
               <span>View Live</span>
             </a>
           </div>

@@ -120,6 +120,7 @@ export const pageQuery = graphql`
         node {
           siteName
           url
+          github
           tech
           role
           description{
