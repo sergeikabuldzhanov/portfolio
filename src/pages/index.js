@@ -123,6 +123,7 @@ export const pageQuery = graphql`
           github
           tech
           role
+          bullets
           description{
             description
             childMarkdownRemark {
