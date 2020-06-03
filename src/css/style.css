@@ -90,10 +90,9 @@ h2:after,
 .see-more a:hover{color:#fff}
 .see-more a span{position:relative;z-index:1}
 .item{height: auto;}
-.outer{ display:flex; flex-wrap: wrap; flex-direction: column;justify-content: space-between; width:100%;border-bottom:1px solid black; max-height: 370px; height: 100%; overflow: hidden;}
-.outer>div{justify-self: flex-end;}
-.outer p span ul{padding-left: 15px;}
-.outer p strong{padding-top: 5px;}
+.outer{ font-size: 14px; display:flex; flex-wrap: wrap; flex-direction: column;justify-content: space-between; width:100%;border-bottom:1px solid black; height: 350px; overflow: hidden;}
+.outer div ul{padding-left: 15px;}
+.outer>div>*{margin-bottom: 0;}
 .outer .see-more{margin-top: 10px;}
 .outer .see-more .small span{width: 70px; display: inline-block;}
 .work-list{display:flex;flex-wrap:wrap;list-style:none;padding:0;margin:0 -5px}

@@ -9,9 +9,10 @@ export default function ProjectCard({
   role,
   impact,
   tech,
-  github
+  github,
+  bullets
 }) {
-  console.log(impact)
+  console.log(impact);
   return (
     <li className="item">
       <div className="inner">
@@ -21,19 +22,25 @@ export default function ProjectCard({
         </a>
       </div>
       <div className="outer">
-        <p>
-          {description.description}
-          <br />
+        <div>
+          <p>{description.description}</p>
+          <p>
           <strong>Role: </strong>
           {role}
-          <br />
+          </p>
+
           <strong>Impact: </strong>
-          <span dangerouslySetInnerHTML={{
-                __html:impact.childMarkdownRemark.html,
-              }}></span>
+          <ul>
+            {bullets.map((bullet, index)=><li key={index}>{bullet}</li>)}
+          </ul>
+          {/* <span
+            dangerouslySetInnerHTML={{
+              __html: impact.childMarkdownRemark.html,
+            }}
+          ></span> */}
           <strong>Stack: </strong>
           {tech}
-        </p>
+        </div>
 
         <div className="d-flex justify-content-between">
           <div className="see-more">
