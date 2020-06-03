@@ -3,7 +3,6 @@ import React, { useState } from "react";
 
 export default function Header({ data, header }) {
   const [menu, setMenu] = useState(false);
-
   return (
     <header className={`site-header ${menu ? "active" : ""}`}>
       <div className="container">
@@ -39,7 +38,7 @@ export default function Header({ data, header }) {
                   .filter((item) => item === "About")
                   .map((t) => {
                     return (
-                      <li>
+                      <li key={t}>
                         <Link to={`/#About`}>About</Link>
                       </li>
                     );
@@ -48,7 +47,7 @@ export default function Header({ data, header }) {
                   .filter((item) => item === "Service")
                   .map((t) => {
                     return (
-                      <li>
+                      <li key={t}>
                         <Link to={`/#Service`}>Service</Link>
                       </li>
                     );
@@ -57,7 +56,7 @@ export default function Header({ data, header }) {
                   .filter((item) => item === "Blogs")
                   .map((t) => {
                     return (
-                      <li>
+                      <li key={t}>
                         <Link to={`/#Blogs`}>Blogs</Link>
                       </li>
                     );
@@ -67,7 +66,7 @@ export default function Header({ data, header }) {
                   .filter((item) => item === "Work")
                   .map((t) => {
                     return (
-                      <li>
+                      <li key={t}>
                         <Link to={`/#Work`}>Work</Link>
                       </li>
                     );
@@ -76,7 +75,7 @@ export default function Header({ data, header }) {
                   .filter((item) => item === "Testimonials")
                   .map((t) => {
                     return (
-                      <li>
+                      <li key={t}>
                         <Link to={`/#Testimonials`}>Testimonials</Link>
                       </li>
                     );
@@ -85,7 +84,7 @@ export default function Header({ data, header }) {
                   .filter((item) => item === "Photos")
                   .map((t) => {
                     return (
-                      <li>
+                      <li key={t}>
                         <Link to={`/#Photos`}>Photos</Link>
                       </li>
                     );
@@ -94,7 +93,7 @@ export default function Header({ data, header }) {
                   .filter((item) => item === "Contact")
                   .map((t) => {
                     return (
-                      <li>
+                      <li key={t}>
                         <Link to={`/#Contact`}>Contact</Link>
                       </li>
                     );
@@ -115,7 +114,7 @@ export default function Header({ data, header }) {
                   .filter((item) => item === "Blogs")
                   .map((t) => {
                     return (
-                      <li>
+                      <li key={t}>
                         <Link to="/blogs">Blogs</Link>
                       </li>
                     );
@@ -124,7 +123,7 @@ export default function Header({ data, header }) {
                   .filter((item) => item === "Photos")
                   .map((t) => {
                     return (
-                      <li>
+                      <li key={t}>
                         <Link to="/photos">Photos</Link>
                       </li>
                     );

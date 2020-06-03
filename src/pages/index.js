@@ -26,25 +26,25 @@ const IndexPage = ({ data }) => (
     {data.contentfulSiteInformation.menus
       .filter((item) => item === "About")
       .map((t) => {
-        return <About data={data.contentfulAboutMe}></About>;
+        return <About key={t} data={data.contentfulAboutMe}></About>;
       })}
 
     {data.contentfulSiteInformation.menus
       .filter((item) => item === "Blogs")
       .map((t) => {
-        return <Blogs data={data.allContentfulBlogs}></Blogs>;
+        return <Blogs key={t} data={data.allContentfulBlogs}></Blogs>;
       })}
 
     {data.contentfulSiteInformation.menus
       .filter((item) => item === "Work")
       .map((t) => {
-        return <Work data={data.allContentfulWorks}></Work>;
+        return <Work key={t} data={data.allContentfulWorks}></Work>;
       })}
 
     {data.contentfulSiteInformation.menus
       .filter((item) => item === "Contact")
       .map((t) => {
-        return <Contact data={data.contentfulAboutMe.gmail}></Contact>;
+        return <Contact key={t} data={data.contentfulAboutMe.gmail}></Contact>;
       })}
   </Layout>
 );

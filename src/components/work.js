@@ -11,19 +11,7 @@ export default function Work({ data }) {
         <ul className="work-list">
           {data.edges.map((item, index) => {
             return (
-              <ProjectCard key={index} {...item.node} />
-              /* <li key={index} className="item">
-                <div className="inner">
-                  <a href={item.node.url}>
-                    <Img
-                      fixed={item.node.image.fluid}
-                      objectFit="cover"
-                      objectPosition="50% 50%"
-                    />
-                    <span className="name">{item.node.siteName}</span>
-                  </a>
-                </div>
-              </li> */
+              <ProjectCard key={item.node.siteName} {...item.node} />
             );
           })}
         </ul>
