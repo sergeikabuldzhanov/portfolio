@@ -11,6 +11,7 @@ export default function ProjectCard({
   tech,
   github
 }) {
+  console.log(impact)
   return (
     <li className="item">
       <div className="inner">
