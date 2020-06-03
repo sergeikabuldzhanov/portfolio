@@ -30,7 +30,7 @@ export default function ProjectCard({
           <strong>Impact: </strong>
           <span dangerouslySetInnerHTML={{
                 __html:impact.childMarkdownRemark.html,
-              }}/>
+              }}></span>
           <strong>Stack: </strong>
           {tech}
         </p>
