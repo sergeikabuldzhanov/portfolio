@@ -21,14 +21,14 @@ export default function ProjectCard({
       </div>
       <div className="outer">
         <p>
-          {description && description.description}
+          {description.description}
           <br />
           <strong>Role: </strong>
           {role}
           <br />
           <strong>Impact: </strong>
           <span dangerouslySetInnerHTML={{
-                __html: impact && impact.childMarkdownRemark.html,
+                __html:impact.childMarkdownRemark.html,
               }}/>
           <strong>Stack: </strong>
           {tech}
