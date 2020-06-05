@@ -5,7 +5,7 @@ import moment from "moment";
 
 export default function Blogs({ data }) {
   return (
-    <div className="blogs-section section" id="Blogs">
+    <section className="blogs-section section" id="Blogs">
       <div className="container">
         <div className="section-head">
           <h2>Blogs</h2>
@@ -46,6 +46,6 @@ export default function Blogs({ data }) {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

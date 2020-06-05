@@ -3,7 +3,7 @@ import Img from "gatsby-image";
 
 export default function Banner({ data }) {
   return (
-    <div className="banner">
+    <section className="banner">
       <Img
         fluid={data.bannerImage.fluid}
         objectFit="cover"
@@ -46,6 +46,6 @@ export default function Banner({ data }) {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
