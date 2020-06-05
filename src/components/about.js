@@ -29,10 +29,6 @@ const Header = ({ data }) => (
                 <p>{data.name}</p>
               </li>
               <li>
-                <strong>Age</strong>
-                <p>{data.age} Years</p>
-              </li>
-              <li>
                 <strong>Location</strong>
                 <p>{data.location}</p>
               </li>
@@ -47,14 +43,6 @@ const Header = ({ data }) => (
               <ul>
                 <li>
                   <a
-                    className="fab fa-twitter"
-                    href={data.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
-                </li>
-                <li>
-                  <a
                     className="fab fa-linkedin-in"
                     href={data.linkdin}
                     target="_blank"
@@ -64,6 +52,14 @@ const Header = ({ data }) => (
                 <li>
                   <a
                     className="fab fa-github"
+                    href={data.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    className="fab fa-cv"
                     href={data.github}
                     target="_blank"
                     rel="noopener noreferrer"

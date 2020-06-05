@@ -1508,6 +1508,20 @@ readers do not read off random characters that represent icons */
   content: "\f38c";
 }
 
+.fa-cv{
+  position: relative;
+}
+
+.fa-cv:before{
+  content: "CV";
+  position: absolute;
+  display: block;
+  top: 5%;
+  left: 2%;
+  font-family: "Josefin Sans";
+  font-weight: bolder;
+}
+
 .fa-d-and-d:before {
   content: "\f38d";
 }
