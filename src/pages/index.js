@@ -77,6 +77,11 @@ export const pageQuery = graphql`
       linkdin
       twitter
       location
+      cv {
+        file {
+          url
+        }
+      }
       description {
         childMarkdownRemark {
           html

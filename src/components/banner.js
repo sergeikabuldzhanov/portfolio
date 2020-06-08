@@ -38,7 +38,7 @@ export default function Banner({ data }) {
             <li>
               <a
                 className="fab fa-cv"
-                href={data.github}
+                href={data.cv.file.url}
                 target="_blank"
                 rel="noopener noreferrer"
               ></a>
