@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact(props) {
   return (
-    <div className="contact section" id="Contact">
+    <section className="contact section" id="Contact">
       <div className="container">
         <div className="section-head">
           <h2 className="text-center">Contact</h2>
@@ -33,6 +33,6 @@ export default function Contact(props) {
           </div>
         </form>
       </div>
-    </div>
+    </section>
   );
 }

@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function Work({ data }) {
   return (
-    <div className="work section" id="Work">
+    <section className="work section" id="Work">
       <div className="container">
         <div className="section-head">
           <h2 className="text-center">Work</h2>
@@ -16,6 +16,6 @@ export default function Work({ data }) {
           })}
         </ul>
       </div>
-    </div>
+    </section>
   );
 }

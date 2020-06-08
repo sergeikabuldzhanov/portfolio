@@ -30,15 +30,15 @@ const IndexPage = ({ data }) => (
       })}
 
     {data.contentfulSiteInformation.menus
-      .filter((item) => item === "Blogs")
-      .map((t) => {
-        return <Blogs key={t} data={data.allContentfulBlogs}></Blogs>;
-      })}
-
-    {data.contentfulSiteInformation.menus
       .filter((item) => item === "Work")
       .map((t) => {
         return <Work key={t} data={data.allContentfulWorks}></Work>;
+      })}
+
+    {data.contentfulSiteInformation.menus
+      .filter((item) => item === "Blogs")
+      .map((t) => {
+        return <Blogs key={t} data={data.allContentfulBlogs}></Blogs>;
       })}
 
     {data.contentfulSiteInformation.menus
@@ -124,13 +124,13 @@ export const pageQuery = graphql`
           tech
           role
           bullets
-          description{
+          description {
             description
             childMarkdownRemark {
               html
             }
           }
-          impact{
+          impact {
             impact
             childMarkdownRemark {
               html

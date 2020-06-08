@@ -3,7 +3,7 @@ import Img from "gatsby-image";
 
 export default function Banner({ data }) {
   return (
-    <div className="banner">
+    <section className="banner">
       <Img
         fluid={data.bannerImage.fluid}
         objectFit="cover"
@@ -11,7 +11,7 @@ export default function Banner({ data }) {
       />
       <div className="container">
         <div className="banner-details">
-          <span>Hello...</span>
+          <span>Hey, I'm {data.name.split(' ')[0]}</span>
           <h1>I'm a {data.designation}.</h1>
           <ul className="sub-data">
             {data.bannerList.map((item, index) => {
@@ -19,14 +19,6 @@ export default function Banner({ data }) {
             })}
           </ul>
           <ul className="social">
-            <li>
-              <a
-                className="fab fa-twitter"
-                href={data.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-              ></a>
-            </li>
             <li>
               <a
                 className="fab fa-linkedin-in"
@@ -43,9 +35,17 @@ export default function Banner({ data }) {
                 rel="noopener noreferrer"
               ></a>
             </li>
+            <li>
+              <a
+                className="fab fa-cv"
+                href={data.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+            </li>
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

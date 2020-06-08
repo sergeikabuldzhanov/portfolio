@@ -2,7 +2,7 @@ import React from "react";
 import Img from "gatsby-image";
 
 const Header = ({ data }) => (
-  <div className="about section" id="About">
+  <section className="about section" id="About">
     <div className="container">
       <div className="about-main row">
         <div className="left col-md-5 col-lg-4 mb-3">
@@ -29,10 +29,6 @@ const Header = ({ data }) => (
                 <p>{data.name}</p>
               </li>
               <li>
-                <strong>Age</strong>
-                <p>{data.age} Years</p>
-              </li>
-              <li>
                 <strong>Location</strong>
                 <p>{data.location}</p>
               </li>
@@ -45,14 +41,6 @@ const Header = ({ data }) => (
             </ul>
             <div className="socials">
               <ul>
-                <li>
-                  <a
-                    className="fab fa-twitter"
-                    href={data.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
-                </li>
                 <li>
                   <a
                     className="fab fa-linkedin-in"
@@ -69,13 +57,21 @@ const Header = ({ data }) => (
                     rel="noopener noreferrer"
                   ></a>
                 </li>
+                <li>
+                  <a
+                    className="fab fa-cv"
+                    href={data.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default Header;

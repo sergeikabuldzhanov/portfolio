@@ -53,21 +53,20 @@ export default function Header({ data, header }) {
                     );
                   })}
                 {data.menus
-                  .filter((item) => item === "Blogs")
-                  .map((t) => {
-                    return (
-                      <li key={t}>
-                        <Link to={`/#Blogs`}>Blogs</Link>
-                      </li>
-                    );
-                  })}
-
-                {data.menus
                   .filter((item) => item === "Work")
                   .map((t) => {
                     return (
                       <li key={t}>
                         <Link to={`/#Work`}>Work</Link>
+                      </li>
+                    );
+                  })}
+                {data.menus
+                  .filter((item) => item === "Blogs")
+                  .map((t) => {
+                    return (
+                      <li key={t}>
+                        <Link to={`/#Blogs`}>Blogs</Link>
                       </li>
                     );
                   })}
